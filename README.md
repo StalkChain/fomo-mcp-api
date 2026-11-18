@@ -15,6 +15,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up tracked token holders in Grok | [Grok crypto MCP setup](docs/guides/grok-crypto-mcp.md) |
 | Install the StalkChain plugin and run its skills in Codex | [Codex crypto MCP setup](docs/guides/codex-crypto-mcp.md) |
 | Research token holders in Cursor | [Cursor crypto MCP setup](docs/guides/cursor-crypto-mcp.md) |
+| Research public wallets in Kiro IDE or CLI | [Kiro crypto MCP setup](docs/guides/kiro-crypto-mcp.md) |
 | Look up wallet holdings in VS Code with GitHub Copilot | [VS Code and GitHub Copilot crypto MCP setup](docs/guides/vscode-copilot-crypto-mcp.md) |
 | Connect a self-hosted Open WebUI instance to Solana wallet PnL | [Open WebUI crypto MCP setup](docs/guides/open-webui-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
@@ -99,3 +100,5 @@ This repository contains developer guides and client integration files. StalkCha
 - [Sources of truth and documentation drift](docs/SOURCE-OF-TRUTH.md)
 
 **Start building at [data.stalkchain.com](https://data.stalkchain.com).**
+
+[Privacy policy](https://data.stalkchain.com/privacy) · [Support](mailto:support@stalkchain.com)
