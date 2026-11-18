@@ -12,7 +12,7 @@ agy plugin install ./integrations/antigravity
 agy plugin list
 ```
 
-In Antigravity, open **Settings → Customizations** and select **Authenticate** for the StalkChain server. Follow the browser prompt and return to Antigravity. If Antigravity asks for the authorization code displayed in your browser, paste it into Antigravity’s authentication panel. [Antigravity MCP authentication](https://antigravity.google/docs/ide-mcp#oauth)
+In an Antigravity CLI session, open `/plugin`, expand **stalkchain-data** under **Installed**, and choose **Sign in**. In the Antigravity interface, open **Settings → Customizations** and select **Authenticate** for the StalkChain server. Follow the browser prompt and return to Antigravity. If Antigravity asks for the authorization code displayed in your browser, paste it into Antigravity’s authentication panel. [Antigravity MCP authentication](https://antigravity.google/docs/ide-mcp#oauth)
 
 For a manual connection in the IDE, open **MCP Servers → Manage MCP Servers → View raw config**. Merge the `stalkchain` entry from [mcp_config.json](mcp_config.json) into the existing `mcpServers` map and authenticate. Choose one installation method to avoid duplicate connections.
 
