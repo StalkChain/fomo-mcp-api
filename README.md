@@ -17,6 +17,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Research token holders in Cursor | [Cursor crypto MCP setup](docs/guides/cursor-crypto-mcp.md) |
 | Research public wallets in Kiro IDE or CLI | [Kiro crypto MCP setup](docs/guides/kiro-crypto-mcp.md) |
 | Research token holders in Zed | [Zed crypto MCP setup](docs/guides/zed-crypto-mcp.md) |
+| Look up Solana wallet PnL in Devin Local or CLI | [Devin crypto MCP setup](docs/guides/devin-crypto-mcp.md) |
 | Look up wallet holdings in VS Code with GitHub Copilot | [VS Code and GitHub Copilot crypto MCP setup](docs/guides/vscode-copilot-crypto-mcp.md) |
 | Connect a self-hosted Open WebUI instance to Solana wallet PnL | [Open WebUI crypto MCP setup](docs/guides/open-webui-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
