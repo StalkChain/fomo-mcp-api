@@ -30,6 +30,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Research public Solana wallets in Perplexity Computer | [Perplexity crypto MCP setup](docs/guides/perplexity-crypto-mcp.md) |
 | Connect wallet and token research to Google Antigravity | [Antigravity crypto MCP setup](integrations/antigravity/README.md) |
 | Look up public wallet holdings in LM Studio | [LM Studio crypto MCP setup](docs/guides/lm-studio-crypto-mcp.md) |
+| Research public Solana wallets in Raycast AI | [Raycast crypto MCP setup](docs/guides/raycast-crypto-mcp.md) |
 | Research a public Solana wallet in Goose | [Goose crypto MCP setup](docs/guides/goose-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
 | Look up public Solana wallets in Qwen Code | [Qwen Code crypto MCP setup](docs/guides/qwen-code-crypto-mcp.md) |
