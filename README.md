@@ -19,6 +19,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
 | Look up a Solana wallet's holdings and PnL | [Solana wallet tracker MCP](docs/guides/solana-wallet-tracker-mcp.md) |
 | Investigate token holders, clustered buys, and exits | [Token holders and smart-money MCP](docs/guides/token-holders-smart-money-mcp.md) |
+| Research Hyperliquid positions, funding, and trader PnL | [Hyperliquid MCP guide](docs/guides/hyperliquid-mcp.md) |
 
 ## Why connect FOMO data to an AI agent?
 
