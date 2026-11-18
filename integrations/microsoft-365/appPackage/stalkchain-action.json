@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "name_for_human": "StalkChain Data",
+  "namespace": "stalkchaindata",
+  "description_for_human": "Look up public crypto trader records, wallets, token safety and market data.",
+  "description_for_model": "Use for grounded research on public on-chain traders, wallets, tokens and markets. Use the least costly lookup that answers the request and obtain confirmation before any alert changes.",
+  "privacy_policy_url": "https://data.stalkchain.com/privacy",
+  "legal_info_url": "https://data.stalkchain.com/terms",
+  "runtimes": [
+    {
+      "type": "RemoteMCPServer",
+      "auth": {
+        "type": "OAuthPluginVault",
+        "reference_id": "${{STALKCHAIN_MCP_AUTH_ID}}"
+      },
+      "spec": {
+        "url": "https://data.stalkchain.com/mcp/directory"
+      }
+    }
+  ]
+}

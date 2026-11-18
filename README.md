@@ -44,6 +44,10 @@ gemini extensions install https://github.com/StalkChain/fomo-mcp-api
 
 Start Gemini CLI and run `/mcp auth stalkchain` to open StalkChain sign-in and approve the connection. Run `/mcp list` to check the connection. The extension points to the hosted directory endpoint and uses your StalkChain account's credits for metered calls.
 
+### Microsoft 365 Copilot
+
+The [Microsoft 365 declarative agent project](integrations/microsoft-365) connects to the StalkChain Data directory endpoint. Provision it in the intended Microsoft 365 tenant with Microsoft 365 Agents Toolkit, then sign in to StalkChain from Copilot.
+
 ## Quick start: REST API
 
 The [OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) describes each tool's input schema and HTTP method. The REST base is `https://data.stalkchain.com/api/v1`; create a key in your dashboard and pass it as `Authorization: Bearer sc_...` to authenticated endpoints. `GET /api/v1/tools` is **authenticated**; an anonymous 401 is expected, not evidence that the API is down. Use the public OpenAPI or [tool reference](https://data.stalkchain.com/docs/tools/index) to inspect available tools before signing in.

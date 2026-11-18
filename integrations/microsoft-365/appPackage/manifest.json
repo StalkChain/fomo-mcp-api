@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.30",
+  "version": "1.0.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "StalkChain",
+    "websiteUrl": "https://data.stalkchain.com",
+    "privacyUrl": "https://data.stalkchain.com/privacy",
+    "termsOfUseUrl": "https://data.stalkchain.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "StalkChain Data",
+    "full": "StalkChain Data for Microsoft 365 Copilot"
+  },
+  "description": {
+    "short": "Research public on-chain traders, wallets and tokens in Microsoft 365 Copilot.",
+    "full": "Use your StalkChain account to research public trader activity, linked wallets, token safety and market data in Microsoft 365 Copilot. StalkChain sign-in is required. Lookups use account credits."
+  },
+  "accentColor": "#203CB0",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "declarativeAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "validDomains": [
+    "data.stalkchain.com"
+  ],
+  "publisherDocsUrl": "https://data.stalkchain.com/docs/guides/getting-started"
+}

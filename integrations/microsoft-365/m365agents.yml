@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://aka.ms/m365-agents-toolkits/v1.12/yaml.schema.json
+version: v1.12
+environmentFolderPath: ./env
+
+provision:
+  - uses: teamsApp/create
+    with:
+      name: StalkChain Data
+    writeToEnvironmentFile:
+      teamsAppId: TEAMS_APP_ID
+
+  - uses: oauth/register
+    with:
+      name: stalkchain-data-oauth
+      appId: ${{TEAMS_APP_ID}}
+      clientId: ${{STALKCHAIN_MCP_CLIENT_ID}}
+      clientSecret: ${{SECRET_STALKCHAIN_MCP_CLIENT_SECRET}}
+      authorizationUrl: https://data.stalkchain.com/oauth/authorize
+      tokenUrl: https://data.stalkchain.com/oauth/token
+      refreshUrl: https://data.stalkchain.com/oauth/token
+      scope: mcp
+      flow: authorizationCode
+      identityProvider: Custom
+      isPKCEEnabled: true
+      tokenExchangeMethodType: PostRequestBody
+      baseUrl: https://data.stalkchain.com/mcp/directory
+    writeToEnvironmentFile:
+      configurationId: STALKCHAIN_MCP_AUTH_ID
+
+  - uses: teamsApp/zipAppPackage
+    with:
+      manifestPath: ./appPackage/manifest.json
+      outputZipPath: ./appPackage/build/StalkChain-Data.${{TEAMSFX_ENV}}.zip
+      outputFolder: ./appPackage/build
+
+  - uses: teamsApp/validateAppPackage
+    with:
+      appPackagePath: ./appPackage/build/StalkChain-Data.${{TEAMSFX_ENV}}.zip
+
+  - uses: teamsApp/update
+    with:
+      appPackagePath: ./appPackage/build/StalkChain-Data.${{TEAMSFX_ENV}}.zip
+
+  - uses: copilotAgent/publish
+    with:
+      appPackagePath: ./appPackage/build/StalkChain-Data.${{TEAMSFX_ENV}}.zip
+      scope: personal
+    writeToEnvironmentFile:
+      titleId: M365_TITLE_ID
+      appId: M365_APP_ID
