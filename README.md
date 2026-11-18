@@ -18,6 +18,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Research public wallets in Kiro IDE or CLI | [Kiro crypto MCP setup](docs/guides/kiro-crypto-mcp.md) |
 | Research token holders in Zed | [Zed crypto MCP setup](docs/guides/zed-crypto-mcp.md) |
 | Check tracked Solana token holders in OpenCode | [OpenCode crypto MCP setup](docs/guides/opencode-crypto-mcp.md) |
+| Research Solana token holders in Cline | [Cline crypto MCP setup](docs/guides/cline-crypto-mcp.md) |
 | Look up Solana wallet PnL in Devin Local or CLI | [Devin crypto MCP setup](docs/guides/devin-crypto-mcp.md) |
 | Look up Solana holdings in JetBrains Junie CLI | [Junie crypto MCP setup](docs/guides/junie-crypto-mcp.md) |
 | Look up public crypto wallets in Mistral Vibe | [Mistral Vibe crypto MCP setup](docs/guides/mistral-vibe-crypto-mcp.md) |
