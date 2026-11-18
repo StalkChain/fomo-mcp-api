@@ -12,6 +12,23 @@ Allow the browser to open VS Code. Review the proposed `stalkchain` server and i
 
 If the browser cannot open VS Code, select Copilot and run **Chat: Open Customizations** from the Command Palette. Under **MCP Servers**, select **Add Server** in the **User** group. Choose HTTP, enter `https://data.stalkchain.com/mcp/directory`, and name the server `stalkchain`. To use it across workspaces, select **Global**, then **Copilot Global**. A managed Copilot account may need its administrator to allow MCP servers. [VS Code MCP setup](https://code.visualstudio.com/docs/agent-customization/mcp-servers)
 
+## Share the MCP configuration with your team
+
+Add this entry to the `.mcp.json` file at the workspace root. If the file already lists servers, merge this entry into its `mcpServers` object.
+
+```json
+{
+  "mcpServers": {
+    "stalkchain": {
+      "type": "http",
+      "url": "https://data.stalkchain.com/mcp/directory"
+    }
+  }
+}
+```
+
+Use the Copilot harness in VS Code or start Copilot CLI in the trusted workspace. Each teammate signs in with their own StalkChain account. If the VS Code setup dialog does not offer workspace-root configuration, add the file directly or choose **Copilot Global** for your own account. [VS Code configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration) · [Copilot CLI repository configuration](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers#adding-per-repository-mcp-servers)
+
 ## Check a Solana wallet in Copilot Chat
 
 Open Copilot Chat and use a public wallet address in your prompt. Expand the tool call to confirm Copilot used StalkChain.
