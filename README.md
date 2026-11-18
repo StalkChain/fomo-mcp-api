@@ -32,6 +32,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up public wallet holdings in LM Studio | [LM Studio crypto MCP setup](docs/guides/lm-studio-crypto-mcp.md) |
 | Research a public Solana wallet in Goose | [Goose crypto MCP setup](docs/guides/goose-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
+| Look up public Solana wallets in Qwen Code | [Qwen Code crypto MCP setup](docs/guides/qwen-code-crypto-mcp.md) |
 | Install StalkChain next to token charts in Chrome | [Chrome extension for DEX Screener and GMGN](docs/guides/stalkchain-chrome-extension.md) |
 | Look up a Solana wallet's holdings and PnL | [Solana wallet tracker MCP](docs/guides/solana-wallet-tracker-mcp.md) |
 | Investigate token holders, clustered buys, and exits | [Token holders and smart-money MCP](docs/guides/token-holders-smart-money-mcp.md) |
