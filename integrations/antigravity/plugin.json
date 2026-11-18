@@ -1,0 +1,19 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "stalkchain-data",
+  "displayName": "StalkChain Data",
+  "version": "1.0.0",
+  "description": "Research public Solana wallets, token holders, tracked-trader flows, and Hyperliquid markets with StalkChain Data.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Show the holdings of this public Solana wallet",
+    "Compare recent tracked-trader flows for this Solana token",
+    "Check funding and open interest for this Hyperliquid market"
+  ],
+  "author": {
+    "name": "StalkChain",
+    "url": "https://stalkchain.com"
+  },
+  "homepage": "https://stalkchain.com/mcp",
+  "repository": "https://github.com/StalkChain/fomo-mcp-api"
+}
