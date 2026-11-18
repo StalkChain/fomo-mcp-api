@@ -73,6 +73,8 @@ Read the [public OpenAPI specification](https://data.stalkchain.com/api/v1/opena
 
 Before a paid tool call, check your account balance, that tool's **current** cost, the number of upstream calls a composite analysis may trigger, and whether your automation repeats. The agent's subscription and the hosted data-service credits are separate charges. See [REST/MCP developer guide](docs/DEVELOPER-GUIDE.md).
 
+To make your first REST request in Postman, import the [read-only starter collection](integrations/postman/README.md). Start with the zero-credit account and service checks.
+
 ## What can you build?
 
 - **Token research desk:** token discovery → attributed holders and flow → developer/early-buyer checks → theses and liquidity caveats.
