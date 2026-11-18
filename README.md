@@ -1,10 +1,19 @@
-# FOMO MCP & API: social-trading data for AI agents
+# StalkChain Data: crypto MCP server and FOMO API developer guide
 
 Connect Claude, ChatGPT, Cursor, Claude Code, or another MCP-compatible agent to tracked-trader wallets, token holders, buy/sell flow, trade theses, and on-chain research via **[StalkChain Data](https://data.stalkchain.com)**. Build research agents, trader dashboards, alerts, and token due-diligence workflows against the **hosted** MCP or REST API.
 
 > **This is a developer guide, not an installable MCP server, SDK, mirror, or independent FOMO API.** StalkChain Data is built by StalkChain; this repository is not operated by or officially endorsed by the FOMO app. The hosted service owns authentication, tool availability, billing, and responses.
 
 **[Connect MCP](https://data.stalkchain.com/mcp)** · **[Developer docs](https://data.stalkchain.com/docs)** · **[Tool reference](https://data.stalkchain.com/docs/tools/index)** · **[Live OpenAPI](https://data.stalkchain.com/api/v1/openapi.json)**
+
+## Install and research guides
+
+| What you want to do | Guide |
+| --- | --- |
+| Connect crypto data to Claude or Claude Code | [Claude crypto MCP setup](docs/guides/claude-crypto-mcp.md) |
+| Install the StalkChain plugin and run its skills in Codex | [Codex crypto MCP setup](docs/guides/codex-crypto-mcp.md) |
+| Look up a Solana wallet's holdings and PnL | [Solana wallet tracker MCP](docs/guides/solana-wallet-tracker-mcp.md) |
+| Investigate token holders, clustered buys, and exits | [Token holders and smart-money MCP](docs/guides/token-holders-smart-money-mcp.md) |
 
 ## Why connect FOMO data to an AI agent?
 
@@ -70,7 +79,7 @@ Before a paid tool call, check your account balance, that tool's **current** cos
 
 StalkChain Data uses metered credits. Account setup is free; a paid tool may return an insufficient-balance error. Purchased-pack terms and individual tool prices are maintained on the [live site](https://data.stalkchain.com/#plans) and [tool reference](https://data.stalkchain.com/docs/tools/index). **Do not assume a prompt is one billable call.** Promotional credits, if offered, have separate eligibility and expiry terms; this repository makes no promise that a particular grant is currently active.
 
-This repository contains **documentation only**. It does not collect credentials, proxy requests, execute trades, or offer investment advice. Attributed wallets may be incomplete or misidentified; displayed PnL may have missing cost basis or partial unrealized positions. Token holders, prices, and social activity change. Verify high-stakes claims with current chain transactions, contract identity, and executable routes rather than an attractive historical screenshot.
+This repository contains developer guides and client integration files. StalkChain hosts the MCP and REST API separately. Attributed wallets may be incomplete or misidentified; displayed PnL may have missing cost basis or partial unrealized positions. Token holders, prices, and social activity change. Verify high-stakes claims with current chain transactions, contract identity, and executable routes rather than an attractive historical screenshot.
 
 ## Documentation
 
