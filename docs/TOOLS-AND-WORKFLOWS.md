@@ -1,6 +1,6 @@
 # Tools and workflows
 
-**Authoritative reference:** [live tools and inputs](https://data.stalkchain.com/docs/tools/index) · [public OpenAPI](https://data.stalkchain.com/api/v1/openapi.json) · [agent summary](https://data.stalkchain.com/llms.txt). This guide organizes jobs rather than republishing a frozen schema. Check the live specification before coding: tool availability, inputs, credit cost, coverage, and account entitlements can change.
+**Authoritative reference:** [live tools and inputs](https://stalkchain.com/docs/tools) · [public OpenAPI](https://data.stalkchain.com/api/v1/openapi.json) · [agent summary](https://data.stalkchain.com/llms.txt). This guide organizes jobs rather than republishing a frozen schema. Check the live specification before coding: tool availability, inputs, credit cost, coverage, and account entitlements can change.
 
 ## FOMO traders and social graph
 

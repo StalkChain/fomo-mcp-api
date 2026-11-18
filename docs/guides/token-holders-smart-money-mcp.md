@@ -17,4 +17,4 @@ A tracked-wallet list covers a subset of the market. Count distinct wallets as w
 
 > Research this exact token: [paste mint or contract], on [chain]. Show tracked holders, position concentration, and the past 24 hours of tracked-wallet inflows and sells. Give the observation times and wallet or transaction links where available. Flag uncertain attribution, missing coverage, and thin liquidity.
 
-Check the [tool reference](https://data.stalkchain.com/docs/tools/index) for available chains, inputs, and credit costs. For an individual holder, continue with the [Solana wallet tracker workflow](solana-wallet-tracker-mcp.md).
+Check the [tool reference](https://stalkchain.com/docs/tools) for available chains, inputs, and credit costs. For an individual holder, continue with the [Solana wallet tracker workflow](solana-wallet-tracker-mcp.md).

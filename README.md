@@ -4,7 +4,7 @@ Connect Claude, ChatGPT, Cursor, Claude Code, or another MCP-compatible agent to
 
 > **This is a developer guide, not an installable MCP server, SDK, mirror, or independent FOMO API.** StalkChain Data is built by StalkChain; this repository is not operated by or officially endorsed by the FOMO app. The hosted service owns authentication, tool availability, billing, and responses.
 
-**[Connect MCP](https://data.stalkchain.com/mcp)** · **[Developer docs](https://data.stalkchain.com/docs)** · **[Tool reference](https://data.stalkchain.com/docs/tools/index)** · **[Live OpenAPI](https://data.stalkchain.com/api/v1/openapi.json)**
+**[Connect MCP](#quick-start-mcp)** · **[Developer docs](https://data.stalkchain.com/docs)** · **[Tool reference](https://stalkchain.com/docs/tools)** · **[Live OpenAPI](https://data.stalkchain.com/api/v1/openapi.json)**
 
 ## Install and research guides
 
@@ -59,7 +59,7 @@ The [Microsoft 365 declarative agent project](integrations/microsoft-365) connec
 
 ## Quick start: REST API
 
-The [OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) describes each tool's input schema and HTTP method. The REST base is `https://data.stalkchain.com/api/v1`; create a key in your dashboard and pass it as `Authorization: Bearer sc_...` to authenticated endpoints. `GET /api/v1/tools` is **authenticated**; an anonymous 401 is expected, not evidence that the API is down. Use the public OpenAPI or [tool reference](https://data.stalkchain.com/docs/tools/index) to inspect available tools before signing in.
+The [OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) describes each tool's input schema and HTTP method. The REST base is `https://data.stalkchain.com/api/v1`; create a key in your dashboard and pass it as `Authorization: Bearer sc_...` to authenticated endpoints. `GET /api/v1/tools` is **authenticated**; an anonymous 401 is expected, not evidence that the API is down. Use the public OpenAPI or [tool reference](https://stalkchain.com/docs/tools) to inspect available tools before signing in.
 
 Read the [public OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) without a key. At verification, even the documented free health REST route returned **401 without authentication**; “free” means zero credits after authentication, not necessarily keyless access. For a non-billable authenticated health check, confirm current entitlement, then use your dashboard-issued key in your own backend—not in browser JavaScript or this repository.
 
@@ -77,7 +77,7 @@ Before a paid tool call, check your account balance, that tool's **current** cos
 
 ## Costs, safety, and trust boundaries
 
-StalkChain Data uses metered credits. Account setup is free; a paid tool may return an insufficient-balance error. Purchased-pack terms and individual tool prices are maintained on the [live site](https://data.stalkchain.com/#plans) and [tool reference](https://data.stalkchain.com/docs/tools/index). **Do not assume a prompt is one billable call.** Promotional credits, if offered, have separate eligibility and expiry terms; this repository makes no promise that a particular grant is currently active.
+StalkChain Data uses metered credits. Account setup is free; a paid tool may return an insufficient-balance error. Purchased-pack terms and individual tool prices are maintained on the [live site](https://data.stalkchain.com/#plans) and [tool reference](https://stalkchain.com/docs/tools). **Do not assume a prompt is one billable call.** Promotional credits, if offered, have separate eligibility and expiry terms; this repository makes no promise that a particular grant is currently active.
 
 This repository contains developer guides and client integration files. StalkChain hosts the MCP and REST API separately. Attributed wallets may be incomplete or misidentified; displayed PnL may have missing cost basis or partial unrealized positions. Token holders, prices, and social activity change. Verify high-stakes claims with current chain transactions, contract identity, and executable routes rather than an attractive historical screenshot.
 

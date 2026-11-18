@@ -16,4 +16,4 @@ Keep attribution and performance as separate steps. A public address can be chec
 
 > Check this Solana wallet: [paste public wallet address]. Start with current holdings. Then report the past 30 days of trading PnL, stating the time window and which figures are realized or still open. Mark missing cost basis, show transaction references where available, and leave unsupported values unknown.
 
-Use an exact chain and time window when comparing wallets. Check the [tool reference](https://data.stalkchain.com/docs/tools/index) for current inputs and credit costs. When the question starts with a token mint, use the [token holder and smart-money flow workflow](token-holders-smart-money-mcp.md).
+Use an exact chain and time window when comparing wallets. Check the [tool reference](https://stalkchain.com/docs/tools) for current inputs and credit costs. When the question starts with a token mint, use the [token holder and smart-money flow workflow](token-holders-smart-money-mcp.md).

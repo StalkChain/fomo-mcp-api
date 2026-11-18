@@ -4,7 +4,7 @@
 
 1. [OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json): public current tool paths, per-tool `x-credits`, inputs, methods, and documented response codes. Generated specs can still lag real deployment: resolve disagreements with a safe authenticated runtime check.
 2. Authenticated `GET https://data.stalkchain.com/api/v1/tools`: current catalog/schema from the service. Anonymous requests return 401; do not call this an outage.
-3. [Tool reference](https://data.stalkchain.com/docs/tools/index), [credits documentation](https://data.stalkchain.com/docs/credits) and [agent summary](https://data.stalkchain.com/llms.txt): developer explanations and setup instructions.
+3. [Tool reference](https://stalkchain.com/docs/tools), [credits documentation](https://data.stalkchain.com/docs/credits) and [agent summary](https://data.stalkchain.com/llms.txt): developer explanations and setup instructions.
 4. [Landing page](https://data.stalkchain.com): public offer and messaging. Account/dashboard terms govern an individual's balance and promotions.
 
 ## Discrepancies observed before this repository was published
