@@ -1,6 +1,6 @@
 # StalkChain Data: crypto MCP server and FOMO API developer guide
 
-Connect Claude, ChatGPT, Codex, Cursor, VS Code with GitHub Copilot, or another MCP-compatible client to tracked-trader wallets, token holders, buy/sell flow, trade theses, and on-chain research via **[StalkChain Data](https://data.stalkchain.com)**. Build research agents, trader dashboards, alerts, and token due-diligence workflows against the **hosted** MCP or REST API.
+Connect Claude, ChatGPT, Grok, Codex, Cursor, VS Code with GitHub Copilot, or another MCP-compatible client to tracked-trader wallets, token holders, buy/sell flow, trade theses, and on-chain research via **[StalkChain Data](https://data.stalkchain.com)**. Build research agents, trader dashboards, alerts, and token due-diligence workflows against the **hosted** MCP or REST API.
 
 > **This is a developer guide, not an installable MCP server, SDK, mirror, or independent FOMO API.** StalkChain Data is built by StalkChain; this repository is not operated by or officially endorsed by the FOMO app. The hosted service owns authentication, tool availability, billing, and responses.
 
@@ -11,6 +11,8 @@ Connect Claude, ChatGPT, Codex, Cursor, VS Code with GitHub Copilot, or another 
 | What you want to do | Guide |
 | --- | --- |
 | Connect crypto data to Claude or Claude Code | [Claude crypto MCP setup](docs/guides/claude-crypto-mcp.md) |
+| Research a public trader in ChatGPT | [ChatGPT crypto MCP setup](docs/guides/chatgpt-crypto-mcp.md) |
+| Look up tracked token holders in Grok | [Grok crypto MCP setup](docs/guides/grok-crypto-mcp.md) |
 | Install the StalkChain plugin and run its skills in Codex | [Codex crypto MCP setup](docs/guides/codex-crypto-mcp.md) |
 | Research token holders in Cursor | [Cursor crypto MCP setup](docs/guides/cursor-crypto-mcp.md) |
 | Look up wallet holdings in VS Code with GitHub Copilot | [VS Code and GitHub Copilot crypto MCP setup](docs/guides/vscode-copilot-crypto-mcp.md) |
