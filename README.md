@@ -29,6 +29,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Connect wallet and token research to Google Antigravity | [Antigravity crypto MCP setup](integrations/antigravity/README.md) |
 | Research a public Solana wallet in Goose | [Goose crypto MCP setup](docs/guides/goose-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
+| Install StalkChain next to token charts in Chrome | [Chrome extension for DEX Screener and GMGN](docs/guides/stalkchain-chrome-extension.md) |
 | Look up a Solana wallet's holdings and PnL | [Solana wallet tracker MCP](docs/guides/solana-wallet-tracker-mcp.md) |
 | Investigate token holders, clustered buys, and exits | [Token holders and smart-money MCP](docs/guides/token-holders-smart-money-mcp.md) |
 | Inspect EVM token restrictions and Solana mint authorities | [Token safety MCP guide](docs/guides/token-safety-mcp.md) |
