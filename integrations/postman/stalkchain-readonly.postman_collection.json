@@ -1,0 +1,174 @@
+{
+  "info": {
+    "name": "StalkChain Data — Read-only Starter",
+    "schema": "https://schema.postman.com/json/collection/v2.1.0/collection.json",
+    "description": "Start with Check account, then Check service health. Both are authenticated and use zero StalkChain credits. The four research requests use credits. Send requests individually and check current costs in the tool reference. Set api_key to a Postman Local Vault reference or a private local environment value. Setup: https://github.com/StalkChain/fomo-mcp-api/tree/main/integrations/postman\n\nOpenAPI: https://data.stalkchain.com/api/v1/openapi.json\nTool reference: https://stalkchain.com/docs/tools"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{api_key}}",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Check account",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/me",
+        "description": "Confirm the API key works and check the account balance. This request uses zero credits."
+      },
+      "response": []
+    },
+    {
+      "name": "Check service health",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/tools/stalkchain_health",
+        "description": "Check API liveness and current data-source status. This request uses zero credits.",
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search traders and tokens",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/tools/stalkchain_fomo_search",
+        "description": "Search for a tracked trader by handle or display name, or search for a token by ticker or name. Edit the example query before sending.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"q\": \"frankdegods\",\n  \"type\": \"traders\",\n  \"limit\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get trader positions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/tools/stalkchain_fomo_trader_positions",
+        "description": "Look up open positions for a tracked trader. Replace the example handle with your research target.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"trader\": \"frankdegods\",\n  \"status\": \"open\",\n  \"limit\": 5\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Solana token prices",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/tools/stalkchain_token_prices",
+        "description": "Look up prices and liquidity for the Solana mints listed in the request body.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tokens\": [\n    \"So11111111111111111111111111111111111111112\"\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get EVM token information",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://data.stalkchain.com/api/v1/tools/stalkchain_token_info",
+        "description": "Look up token data by chain and contract address. The example uses USDC on Base.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"chain\": \"base\",\n  \"address\": \"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": []
+    }
+  ]
+}
