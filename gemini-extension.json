@@ -1,0 +1,11 @@
+{
+  "name": "stalkchain-data",
+  "version": "1.0.0",
+  "description": "Research crypto trader wallets, performance, token holders, and on-chain flows in Gemini CLI through the hosted StalkChain Data connector.",
+  "mcpServers": {
+    "stalkchain": {
+      "url": "https://data.stalkchain.com/mcp/directory",
+      "type": "http"
+    }
+  }
+}
