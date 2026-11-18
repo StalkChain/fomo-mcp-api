@@ -27,6 +27,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up wallet holdings in VS Code with GitHub Copilot | [VS Code and GitHub Copilot crypto MCP setup](docs/guides/vscode-copilot-crypto-mcp.md) |
 | Connect a self-hosted Open WebUI instance to Solana wallet PnL | [Open WebUI crypto MCP setup](docs/guides/open-webui-crypto-mcp.md) |
 | Connect wallet and token research to Google Antigravity | [Antigravity crypto MCP setup](integrations/antigravity/README.md) |
+| Look up public wallet holdings in LM Studio | [LM Studio crypto MCP setup](docs/guides/lm-studio-crypto-mcp.md) |
 | Research a public Solana wallet in Goose | [Goose crypto MCP setup](docs/guides/goose-crypto-mcp.md) |
 | Look up Solana holdings in Gemini CLI | [Gemini CLI crypto MCP setup](docs/guides/gemini-cli-crypto-mcp.md) |
 | Install StalkChain next to token charts in Chrome | [Chrome extension for DEX Screener and GMGN](docs/guides/stalkchain-chrome-extension.md) |
