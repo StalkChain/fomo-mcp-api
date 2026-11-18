@@ -2,9 +2,19 @@
 
 Use StalkChain Data in Qwen Code to research public Solana wallets, token holders, and trader activity. The hosted MCP uses Streamable HTTP and browser sign-in. Metered lookups use your StalkChain account credits.
 
-## Add the hosted server
+## Install from GitHub
 
-With Qwen Code installed on the same computer as your browser, run:
+With Qwen Code and your browser on the same computer, run:
+
+```sh
+qwen extensions install https://github.com/StalkChain/fomo-mcp-api
+```
+
+Review the extension details and confirm installation. Run `qwen extensions list` to check for **stalkchain-data** v1.0.1 or later. If you already installed v1.0.0, run `qwen extensions update stalkchain-data` so Qwen Code uses Streamable HTTP.
+
+## Add only the hosted server
+
+If you prefer to skip the extension, add the server directly:
 
 ```sh
 qwen mcp add --scope user --transport http stalkchain https://data.stalkchain.com/mcp/directory
@@ -21,6 +31,8 @@ This adds the server for your user account. Use `--scope project` to configure o
   }
 }
 ```
+
+## Sign in to StalkChain
 
 1. Start or restart Qwen Code and enter `/mcp`.
 2. Select `stalkchain`, choose **Authenticate**, and complete the StalkChain consent flow in your browser.
