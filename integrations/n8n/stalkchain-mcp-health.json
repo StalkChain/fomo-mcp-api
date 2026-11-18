@@ -1,0 +1,56 @@
+{
+  "name": "StalkChain MCP health check",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "d14b8e4b-2b56-4d9a-a308-17cb6de193bc",
+      "name": "Run manually",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "serverTransport": "httpStreamable",
+        "endpointUrl": "https://data.stalkchain.com/mcp/directory",
+        "authentication": "mcpOAuth2Api",
+        "tool": {
+          "__rl": true,
+          "mode": "id",
+          "value": "stalkchain_health"
+        },
+        "inputMode": "json",
+        "jsonInput": "{}",
+        "options": {}
+      },
+      "id": "70385a62-f66e-47dc-b1b0-e32fc8df09b5",
+      "name": "StalkChain health",
+      "type": "@n8n/n8n-nodes-langchain.mcpClient",
+      "typeVersion": 1.1,
+      "position": [
+        260,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Run manually": {
+      "main": [
+        [
+          {
+            "node": "StalkChain health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
