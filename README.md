@@ -68,6 +68,10 @@ claude mcp add --transport http stalkchain https://data.stalkchain.com/mcp
 
 Client interfaces change: use the [getting-started guide](https://data.stalkchain.com/docs/guides/getting-started) if your UI differs. OAuth clients do not need a pasted REST API key. Never approve unnecessary permissions or commit a credential.
 
+### Registry metadata
+
+The [Official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/com.stalkchain%2Fdata/versions/latest) lists the hosted StalkChain Data MCP as `com.stalkchain/data`. The [server.json manifest](server.json) mirrors the published record for catalog maintainers. Update the manifest alongside any future registry release.
+
 ### Gemini CLI
 
 Install the StalkChain Data extension from this repository:

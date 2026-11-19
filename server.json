@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.stalkchain/data",
+  "description": "Crypto research: what FOMO's top traders buy, real wallets and PnL, token safety, smart money.",
+  "title": "StalkChain Data",
+  "version": "1.0.0",
+  "websiteUrl": "https://stalkchain.com/mcp",
+  "icons": [
+    {
+      "src": "https://data.stalkchain.com/apple-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://data.stalkchain.com/mcp"
+    }
+  ]
+}
