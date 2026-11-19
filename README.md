@@ -25,6 +25,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up Solana holdings in JetBrains Junie CLI | [Junie crypto MCP setup](docs/guides/junie-crypto-mcp.md) |
 | Look up public crypto wallets in Mistral Vibe | [Mistral Vibe crypto MCP setup](docs/guides/mistral-vibe-crypto-mcp.md) |
 | Look up wallet holdings in VS Code with GitHub Copilot | [VS Code and GitHub Copilot crypto MCP setup](docs/guides/vscode-copilot-crypto-mcp.md) |
+| Connect a wallet research profile through Docker MCP Toolkit | [Docker MCP Toolkit crypto setup](docs/guides/docker-crypto-mcp.md) |
 | Connect a self-hosted Open WebUI instance to Solana wallet PnL | [Open WebUI crypto MCP setup](docs/guides/open-webui-crypto-mcp.md) |
 | Research Solana wallets in a self-hosted LibreChat instance | [LibreChat crypto MCP setup](docs/guides/librechat-crypto-mcp.md) |
 | Research public Solana wallets in Perplexity Computer | [Perplexity crypto MCP setup](docs/guides/perplexity-crypto-mcp.md) |
