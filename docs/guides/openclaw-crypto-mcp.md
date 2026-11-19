@@ -15,7 +15,7 @@ openclaw mcp probe stalkchain
 
 Complete sign-in and review the permissions on StalkChain when OpenClaw prompts you. Run the probe after approval to check that OpenClaw can discover tools. If you manage the Gateway remotely and the browser cannot reach its callback, follow the [OpenClaw OAuth instructions](https://docs.openclaw.ai/cli/mcp/transports). Keep the authorization code private.
 
-You can also install the optional [StalkChain research skill on ClawHub](https://clawhub.ai/assistant-design/skills/stalkchain) for research instructions. The MCP connection handles authentication and tool access.
+You can also install the optional [StalkChain research skill on ClawHub](https://clawhub.ai/assistant-design/skills/stalkchain) for research instructions. Read the [skill source](../../integrations/openclaw/stalkchain/SKILL.md) before installing. The MCP connection handles authentication and tool access.
 
 ## Research a public Solana wallet
 
