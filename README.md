@@ -122,6 +122,8 @@ This repository contains developer guides and client integration files. StalkCha
 - [Troubleshooting](docs/TROUBLESHOOTING.md)
 - [Sources of truth and documentation drift](docs/SOURCE-OF-TRUTH.md)
 
+[![StalkChain Data listing status on MCPVault](https://mcpvault.io/badge/fomo-mcp-api.svg)](https://mcpvault.io/servers/fomo-mcp-api)
+
 **Start building at [data.stalkchain.com](https://data.stalkchain.com).**
 
 [Privacy policy](https://data.stalkchain.com/privacy) · [Support](mailto:support@stalkchain.com)
