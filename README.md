@@ -15,6 +15,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Look up tracked token holders in Grok | [Grok crypto MCP setup](docs/guides/grok-crypto-mcp.md) |
 | Install the StalkChain plugin and run its skills in Codex | [Codex crypto MCP setup](docs/guides/codex-crypto-mcp.md) |
 | Research token holders in Cursor | [Cursor crypto MCP setup](docs/guides/cursor-crypto-mcp.md) |
+| Research wallet holdings in Windsurf Cascade for JetBrains | [Windsurf crypto MCP setup](docs/guides/windsurf-crypto-mcp.md) |
 | Research public wallets in Kiro IDE or CLI | [Kiro crypto MCP setup](docs/guides/kiro-crypto-mcp.md) |
 | Research token holders in Zed | [Zed crypto MCP setup](docs/guides/zed-crypto-mcp.md) |
 | Check tracked Solana token holders in OpenCode | [OpenCode crypto MCP setup](docs/guides/opencode-crypto-mcp.md) |
