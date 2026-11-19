@@ -26,4 +26,4 @@ For a first lookup, ask your client to summarize the publicly visible holdings o
 
 ## Test status
 
-We verified the dedicated profile import with Docker’s command-line tool. Docker’s OAuth discovery and registration reached StalkChain sign-in for both the official catalog callback and the local callback used by manually imported servers. The signed-in lookup is pending. Follow the [Docker MCP Catalog submission](https://github.com/docker/mcp-registry/pull/7303) for the official listing.
+We verified profile import with Docker’s CLI. In a separate signed-in test using Docker’s remote client, StalkChain completed OAuth and returned 99 tools from the scoped endpoint. The test account had discovery-only access. A read-only market-data lookup and the official catalog listing are pending. [Docker submission and test results](https://github.com/docker/mcp-registry/pull/7303#issuecomment-7002680490)
