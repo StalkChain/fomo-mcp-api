@@ -2,7 +2,7 @@
 
 ## Choose the right connection
 
-**MCP:** connect `https://data.stalkchain.com/mcp` in a Streamable HTTP MCP client. The hosted service handles OAuth 2.1 sign-in and tool execution. This repo has nothing to install or run. The current client-specific steps live at [getting started](https://data.stalkchain.com/docs/guides/getting-started) and [llms.txt](https://data.stalkchain.com/llms.txt).
+**MCP:** connect `https://data.stalkchain.com/mcp` in a Streamable HTTP client, or use `https://data.stalkchain.com/mcp/directory` for the directory connector. The directory connector exposes research and email alerts. Both endpoints use OAuth 2.1. Follow the [client setup instructions](../README.md#quick-start-mcp), [getting started](https://data.stalkchain.com/docs/guides/getting-started), or [llms.txt](https://data.stalkchain.com/llms.txt).
 
 **REST:** call `https://data.stalkchain.com/api/v1` from a backend service or script. Generate a key in your StalkChain Data dashboard; send it as `Authorization: Bearer <key>`. Do not embed the key in a public website, mobile bundle, screenshot, code example with real values, or Git history.
 
@@ -16,7 +16,14 @@ The public OpenAPI spec can be read without a key:
 curl -fsS https://data.stalkchain.com/api/v1/openapi.json
 ```
 
-The spec currently marks `stalkchain_health` as a zero-credit GET, but the live route returned **401 when queried without credentials**. This is a mismatch between documentation and auth behavior, not a reason to bypass authentication. To check service health after obtaining a dashboard key, run locally (never commit or paste the key):
+The public reachability check at `/healthz` requires no account. An OAuth client can also check discovery with the directory endpoint. A signed-out request to that endpoint returns HTTP 401 with a `WWW-Authenticate` header that identifies its protected-resource metadata. That response confirms reachability and OAuth discovery. Testing a signed-in tool requires an account.
+
+```sh
+curl -fsS https://data.stalkchain.com/healthz
+curl -sS -D - -o /dev/null https://data.stalkchain.com/mcp/directory
+```
+
+The `stalkchain_health` REST tool costs zero credits and requires a dashboard API key. Keep the key in your backend environment:
 
 ```sh
 curl -fsS -H "Authorization: Bearer ${STALKCHAIN_API_KEY}" \
