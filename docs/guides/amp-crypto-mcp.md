@@ -4,7 +4,7 @@ Add StalkChain Data as a personal remote MCP in Amp to research public crypto wa
 
 ## Add StalkChain Data
 
-1. Open [MCP settings in Amp](https://ampcode.com/settings/mcp-servers) and choose **Add MCP Server** under your personal settings.
+1. Open [MCP settings in Amp](https://ampcode.com/settings/integrations) and choose **Add MCP Server** under your personal settings.
 2. Name the server **StalkChain Data**, set its URL to `https://data.stalkchain.com/mcp/directory`, and select **OAuth**.
 3. When Amp opens the authorization flow, sign in to StalkChain, review the requested access, and approve the connection.
 4. In Amp's MCP settings, expand **Tools** on the server and choose **Ask First** for any metered tools or alert changes you want to approve individually.
