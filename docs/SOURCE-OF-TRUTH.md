@@ -17,7 +17,7 @@ The planned $5 promotional grant for 7 days is **not asserted to be live** here.
 
 - Recheck the current registry, OpenAPI and client setup instructions before adding a new tool or changing a cost claim.
 - Validate exact tool IDs and coverage; mark removed tools rather than silently inventing replacements.
-- Exercise a free, keyless health call when permitted; do not use billable accounts without authorization.
+- Check [public service health](https://data.stalkchain.com/healthz) for reachability. For a tool-level check, confirm the current cost and use an authorized account.
 - Check internal relative links, external official links, GitHub's rendered Markdown and the public `data.stalkchain.com` destination.
 - Preserve editorial caveats: account identity, chain/contract, timing, incomplete PnL basis, and research versus execution.
 - Prefer a compact update with an evidence URL and date to unverified claims of “real-time”, “all wallets”, or “guaranteed alpha”.

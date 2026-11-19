@@ -6,7 +6,9 @@ You do not. It is **documentation for an existing hosted service**, not a packag
 
 ## My MCP client cannot connect
 
-Confirm that it supports remote **Streamable HTTP** MCP, that the endpoint is exactly `https://data.stalkchain.com/mcp`, and that the browser OAuth sign-in/approval completed. Refresh the connection or start a new chat after authorizing. A normal browser GET to `/mcp` is not a complete MCP protocol test.
+Confirm that the client supports remote **Streamable HTTP** MCP and browser OAuth. Use `https://data.stalkchain.com/mcp` for the general connector or `https://data.stalkchain.com/mcp/directory` if your setup guide calls for the directory connector. A request without credentials returns HTTP 401 and a `WWW-Authenticate` header. The header points the client to the protected-resource metadata for that exact endpoint.
+
+Complete the sign-in and approval in the client, then refresh its tools or start a new chat. If the client shows its connection as signed in, use its tool list to confirm that MCP initialization succeeded. See [OAuth discovery checks](DEVELOPER-GUIDE.md#first-read-only-requests).
 
 ## My REST request returns 401
 
@@ -22,7 +24,7 @@ Your account may lack sufficient credits for that tool. Stop the loop, inspect y
 
 ## The service returns 502 or a result is empty
 
-Check service status or an authenticated zero-credit `stalkchain_health` call; the REST health route returned 401 anonymously even though an older spec describes it as keyless. A 502 indicates an upstream/tool issue, not necessarily absence of token activity. Empty results can reflect time window, coverage, registry state, or filters. Preserve the exact query and observation time for support.
+Check [public service health](https://data.stalkchain.com/healthz), then use the authenticated zero-credit `stalkchain_health` tool if you need the data-source check. A 502 indicates an upstream or tool failure. Check for a successful response before interpreting token activity. Empty results can reflect time window, coverage, registry state, or filters. Preserve the exact query and observation time for support.
 
 ## Why did one question use multiple credits?
 

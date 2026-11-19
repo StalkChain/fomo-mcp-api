@@ -93,7 +93,7 @@ The [Microsoft 365 declarative agent project](integrations/microsoft-365) connec
 
 The [OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) describes each tool's input schema and HTTP method. The REST base is `https://data.stalkchain.com/api/v1`; create a key in your dashboard and pass it as `Authorization: Bearer sc_...` to authenticated endpoints. `GET /api/v1/tools` is **authenticated**; an anonymous 401 is expected, not evidence that the API is down. Use the public OpenAPI or [tool reference](https://stalkchain.com/docs/tools) to inspect available tools before signing in.
 
-Read the [public OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) without a key. At verification, even the documented free health REST route returned **401 without authentication**; “free” means zero credits after authentication, not necessarily keyless access. For a non-billable authenticated health check, confirm current entitlement, then use your dashboard-issued key in your own backend—not in browser JavaScript or this repository.
+Read the [public OpenAPI specification](https://data.stalkchain.com/api/v1/openapi.json) without a key. Use [public service health](https://data.stalkchain.com/healthz) to check reachability. The REST `stalkchain_health` tool costs zero credits after authentication. For that tool, use your dashboard-issued key in your backend and keep it out of source files.
 
 Before a paid tool call, check your account balance, that tool's **current** cost, the number of upstream calls a composite analysis may trigger, and whether your automation repeats. The agent's subscription and the hosted data-service credits are separate charges. See [REST/MCP developer guide](docs/DEVELOPER-GUIDE.md).
 
