@@ -42,6 +42,7 @@ Connect Claude, ChatGPT, Grok, Codex, Cursor, Gemini CLI, VS Code with GitHub Co
 | Install StalkChain next to token charts in Chrome | [Chrome extension for DEX Screener and GMGN](docs/guides/stalkchain-chrome-extension.md) |
 | Look up a Solana wallet's holdings and PnL | [Solana wallet tracker MCP](docs/guides/solana-wallet-tracker-mcp.md) |
 | Investigate token holders, clustered buys, and exits | [Token holders and smart-money MCP](docs/guides/token-holders-smart-money-mcp.md) |
+| Find the first buyers of a Solana token and check exits | [Solana token first buyers MCP](docs/guides/solana-token-first-buyers-mcp.md) |
 | Inspect EVM token restrictions and Solana mint authorities | [Token safety MCP guide](docs/guides/token-safety-mcp.md) |
 | Research Hyperliquid positions, funding, and trader PnL | [Hyperliquid MCP guide](docs/guides/hyperliquid-mcp.md) |
 
