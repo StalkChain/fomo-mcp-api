@@ -3,8 +3,12 @@
   "name": "com.stalkchain/data",
   "description": "Crypto research: what FOMO's top traders buy, real wallets and PnL, token safety, smart money.",
   "title": "StalkChain Data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://stalkchain.com/mcp",
+  "repository": {
+    "url": "https://github.com/StalkChain/fomo-mcp-api",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://data.stalkchain.com/apple-icon.png",
