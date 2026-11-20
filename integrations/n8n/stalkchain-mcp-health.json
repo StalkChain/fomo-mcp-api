@@ -34,6 +34,21 @@
         260,
         0
       ]
+    },
+    {
+      "parameters": {
+        "content": "## Check your StalkChain MCP connection\n\n1. Open **StalkChain health** and create an **MCP OAuth2** credential. Keep automatic client registration enabled. If you enter a resource URL, use the endpoint already shown in the node.\n2. Sign in to StalkChain and approve access. Save the credential, then select **Execute workflow**.\n3. Open the output of **StalkChain health**. A response confirms the connection even when an individual data source reports degraded health.\n\nThe manual health call uses zero credits. Check your balance before replacing it with a metered lookup.",
+        "width": 520,
+        "height": 330
+      },
+      "id": "d3befaeb-f975-4378-b896-ca656fa56af4",
+      "name": "Setup and expected output",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -370
+      ]
     }
   ],
   "connections": {
